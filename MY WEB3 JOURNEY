@@ -1,0 +1,88 @@
+ My Web3 Journey
+### By Hannah Chiemeka
+
+---
+
+## Blockchain Infrastructure Research
+
+### Overview
+Blockchain infrastructure forms the foundation of Web3 technology. It consists of nodes, clients, and consensus mechanisms that maintain transparency, decentralization, and immutability across the network. Below is an analysis of five major blockchain networks — *Bitcoin, Ethereum, Solana, Polkadot, and Hyperledger Fabric* — highlighting how each achieves consensus and manages its ecosystem.
+
+---
+
+### Blockchain Comparison
+| Blockchain | Node Roles | Example Clients | Consensus Mechanism | Typical Use-Case |
+|-------------|-------------|-----------------|---------------------|------------------|
+| *Bitcoin* | Full nodes validate and relay transactions; miners create blocks. | Bitcoin Core (full node), Electrum (light wallet) | *Proof of Work (PoW)* – computational mining, longest chain rule. | Digital cash, store of value. |
+| *Ethereum* | Execution nodes, consensus nodes, validators secure network. | Geth, Nethermind, Prysm, Teku, Lighthouse | *Proof of Stake (PoS)* – validator-based block finality. | Smart contracts, decentralized apps. |
+| *Solana* | Validator nodes, leader nodes, archivers for storage. | solana-validator (official client) | *Proof of History (PoH)* + PoS hybrid model. | High-speed DeFi, gaming, NFTs. |
+| *Polkadot* | Relay chain validators, collators (for parachains), nominators. | Parity Polkadot client | *Nominated Proof of Stake (NPoS)* – shared security model. | Multi-chain interoperability, parachains. |
+| *Hyperledger Fabric* | Peers, orderers, certificate authorities (CA). | Fabric peer/orderer binaries | *Pluggable consensus* (e.g., Raft) in permissioned environments. | Enterprise/private ledger solutions. |
+
+---
+
+## Distributed Ledgers vs Blockchain
+| Aspect | Distributed Ledger (DLT) | Blockchain |
+|--------|---------------------------|-------------|
+| *Structure* | General decentralized ledger; may not use blocks. | Specific type of DLT chaining blocks with hashes. |
+| *Permission Model* | Usually *permissioned* (enterprise, closed participants). | Often *permissionless*, open participation. |
+| *Consensus* | PBFT, Raft, or custom pluggable algorithms. | PoW, PoS, PoH, or hybrid mechanisms. |
+| *Use-Cases* | Supply chain, identity, enterprise data sharing. | Cryptocurrencies, DeFi, DAOs, public apps. |
+
+*Summary:* All blockchains are distributed ledgers, but not all distributed ledgers are blockchains. DLTs emphasize control and permission; blockchains emphasize decentralization and transparency.
+
+---
+
+## NFTs and Fungible Tokens: Ownership & Real-World Use Cases
+
+### Token Standards
+| Type | Standards | Characteristics | Example |
+|------|------------|-----------------|----------|
+| *Fungible Tokens* | ERC-20 (Ethereum), SPL (Solana) | Interchangeable, divisible, same value per token. | ETH, USDC, SOL |
+| *Non-Fungible Tokens (NFTs)* | ERC-721, ERC-1155 (Ethereum), Flow NFT standard | Unique, indivisible, carries metadata (ownership & provenance). | CryptoPunks, BAYC, NBA Top Shot |
+
+### How Ownership Changes
+ A wallet (private key) signs a transaction calling the token contract function (transfer or safeTransferFrom).  
+ The transaction is broadcast to nodes and verified through consensus.  
+ Once validated, the smart contract updates ownership on-chain.  
+ Marketplaces (e.g., OpenSea, Magic Eden, Flow) use these transfer functions for buying/selling.  
+
+Ownership change = Smart contract + Consensus + Immutable ledger record.
+
+---
+
+### Real-World Token Examples
+| Example | Blockchain | Token Type | Description & Ownership Mechanism |
+|----------|-------------|-------------|-----------------------------------|
+| *CryptoPunks* | Ethereum | NFT (ERC-721) | 10,000 pixel-art NFTs; ownership verified via on-chain metadata and smart contract registry. |
+| *Bored Ape Yacht Club (BAYC)* + *ApeCoin (APE)* | Ethereum | NFT + Fungible Token | BAYC represents identity and access; ApeCoin is the governance/utility token for the ecosystem. |
+| *NBA Top Shot* | Flow | NFT | Sports highlight NFTs licensed by the NBA; ownership managed via Flow’s Cadence smart contracts. |
+| *Axie Infinity* | Ethereum/Ronin | NFT + Fungible Tokens (AXS, SLP) | Game assets (Axies) are NFTs; AXS/SLP power in-game economy and governance. |
+| *Art Blocks* | Ethereum | NFT | Generative art minted on-chain; each piece uniquely generated and owned via ERC-721 contracts. |
+| *USDC / ETH / SOL* | Ethereum, Solana | Fungible Tokens | Used for payments, gas fees, and trading; balances updated on-chain with every transfer. |
+
+---
+
+## Summary
+Blockchain technology underpins the decentralized world of Web3. It replaces central control with distributed verification, ensuring security, transparency, and ownership authenticity. NFTs demonstrate how digital ownership can exist independently of centralized platforms, while fungible tokens drive value exchange and governance across ecosystems.
+
+Understanding the interaction between consensus, smart contracts, and ownership lays the foundation for building, investing, or working within the Web3 space.
+
+---
+
+## References
+ Nakamoto, Satoshi. Bitcoin: A Peer-to-Peer Electronic Cash System (2008).  
+ Ethereum Foundation. Ethereum Nodes and Clients Documentation.  
+ Solana Labs. Solana Whitepaper: A New Architecture for a High Performance Blockchain.  
+ Polkadot Network. Proof of Stake and Parachain Documentation.  
+ Hyperledger Foundation. What is Hyperledger Fabric?  
+ OpenZeppelin Docs. ERC-20 Token Standard.  
+ OpenZeppelin Docs. ERC-721 Non-Fungible Token Standard.  
+ Ethereum.org. ERC-1155 Multi-Token Standard.  
+ Investopedia. Solana Explained.  
+ Larva Labs / Infinite Node Foundation. CryptoPunks NFT Documentation.  
+ The Verge / TechCrunch. Bored Ape and ApeCoin Ecosystem Overview.  
+ Flow / Dapper Labs. NBA Top Shot and Flow Blockchain Docs.  
+ Axie Infinity. Game Mechanics and Tokenomics.  
+ Hyperledger Fabric. Peers and Ordering Service Overview.  
+ Rareskills Blog. ERC-1155 Token Explainer.
